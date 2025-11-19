@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<HTML LANG="ES">
+    <HEAD>
+        <META charset="UTF-8">
+            <meta name="viewport"content="width=device-width
+            initial-scale=1.0">
+            <title>Distrito de Asia</title>
+            <style>
+                /* fuente similar a forte */
+                @import url( 'https://fonts.gogleapis.com/css2?family=chewy&display=swap');
+
+                *{
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+
+                body{
+                    font-family: 'chewy', cursive;
+                    color: #000;
+                }
+
+                /* seccion principal */
+                .hero{
+                    height: 100vh;
+                    background: url(https://www.muniasia.gob.pe/wp-content/uploads/2021/05/nuestro-distrito-1.png) no-repeat center center/cover;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: relative;
+                } 
+
+                .overlay{
+                    position: absolute;
+                    margin-bottom: 60px;
+                    width: 100%;
+                    background-color: rgba(245,246,246,0.5);
+                    padding: 20px;
+                    text-align: center;
+                }
+                  .overlay h1{
+                    font-size: 5em;
+                    color:#000;
+                    text-shadow: 2px 2px 5px rgba(255, 255, 255,0.8);
+                  }
+
+                  .escudo {
+                    position: absolute;
+                    margin-bottom: 95px;
+                    right: 25px;
+                    width: 220px;
+                    filter:drop-shadow(0 0 20px rgba(246, 209, 73, 0.747));
+                  }
+                    
+                  .btn{
+                    display: inline-block;
+                    font-size: 30px;
+                    margin-top: 10px;
+                    background-color: red;
+                    color: white;
+                    width: 160px;
+                    padding: 12px 15px;
+                    border-radius: 25px;
+                    font-weight: bold;
+                    text-decoration: none;
+                    transition: 0.3s;
+                  }
+
+                  .btn:hover{
+                    background-color: #c40000;
+                  }
+
+                  /*seccion del mapa e infomacion */   
+                  .info{
+                    height: 100vh;
+                    background-color: #f9f9f9;
+                    padding: 40px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                  }
+
+                  iframe{
+                    width: 80%;
+                    height: 650px;
+                    border-radius: 15px;
+                    margin-bottom: 30px;
+                  }
+
+                  @media(max-width:768px){
+                    .overlay h1{
+                        font-size: 2em;
+                    }
+                  .escudo{
+                    width: 80px;
+                    bottom: 10px;
+                    right: 10px;
+                  }
+                  iframe{
+                    width: 95%;
+                    height: 300px;
+                  }
+                }
+                </style>
+                </HEAD>
+                <body>
+                    <!--seccion principal-->
+                    <section class="hero">
+                        <div class="overlay">
+                            <h1>Distrito de Asia</h1>
+                            <a href="#info" class="btn">Ver mas</a>
+                            </div>
+                            <img src="https://static.wixstatic.com/media/752189_5db918c02be14839a9148224085e3eb5~mv2.png/v1/fill/w_400,h_530,al_c,q_85,enc_avif,quality_auto/752189_5db918c02be14839a9148224085e3eb5~mv2.png"
+                            alt="Escudo de Asia"
+                            class="escudo">
+                    </section>
+                      
+                    <!--seccion de informacion-->
+                    <section class="info" id="info">
+                        <iframe
+                        src="https://www.google.com/maps?q=ASIA,+cañete,+lima,+peru&output=embed"
+                        loading="lazy">
+
+                    </iframe>
+
+                    </section>
+
+                </body>
+                </HTML>
